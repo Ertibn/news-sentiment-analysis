@@ -1,8 +1,8 @@
 # Predicting Market Pulses: How News Sentiment Shapes Stock Swings
 
 **By Ertiban Debebe**
-*Data Analyst at Nova Financial Solutions*
-*Published on 12 May 2026*
+_Data Analyst at Nova Financial Solutions_
+_Published on 12 May 2026_
 
 ---
 
@@ -32,11 +32,13 @@ Our analytical pipeline follows a rigorous four-stage process designed to separa
 Our analysis of the news dataset revealed a highly structured reporting environment with clear trends in how information is disseminated.
 
 ### Concise Communication
+
 Most financial headlines are extremely concise, typically falling between **40 and 80 characters**. This suggests that market sentiment is often distilled into "sound bites" for rapid consumption.
 
 ![Headline Length Distribution](./figures/headline_length_dist.png)
 
 ### Source Dominance
+
 A small number of publishers dominate the news cycle. Sources like **Seeking Alpha**, **Reuters**, and **Bloomberg** provide the highest frequency of updates, serving as the primary drivers of market narrative.
 
 ![Articles per Publisher](./figures/articles_per_publisher.png)
@@ -59,11 +61,13 @@ To understand the underlying price action, we implemented a suite of technical i
 The core of our research was linking news tone to price performance. We mapped 100 headlines to their corresponding trading days using a combined sentiment score.
 
 ### Statistical Correlation
+
 Our analysis revealed a **Pearson Correlation Coefficient of 0.3202**. While a positive relationship exists, the p-value of 0.3670 suggests that a larger dataset is required to achieve high statistical significance.
 
 ![Sentiment Return Correlation](./figures/sentiment_return_correlation.png)
 
 ### Categorical Performance
+
 We observed that days categorized as "Positive" sentiment generally outperformed "Negative" or "Neutral" days, reinforcing the strategy of using sentiment as a directional filter.
 
 ![Return by Category](./figures/return_by_sentiment_category.png)
@@ -88,4 +92,4 @@ Based on our findings, we recommend the following strategies for investment team
 
 ---
 
-**Nova Financial Solutions**: *Empowering investment teams with data-driven insights that connect market narratives to price action.*
+**Nova Financial Solutions**: _Empowering investment teams with data-driven insights that connect market narratives to price action._
