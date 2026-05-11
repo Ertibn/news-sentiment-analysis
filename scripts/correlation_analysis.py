@@ -34,6 +34,7 @@ daily_sentiment_aapl = daily_sentiment[daily_sentiment['stock'] == 'AAPL']
 merged_df = pd.merge(daily_sentiment_aapl, stock_df, left_on='date', right_on='Date')
 
 # 6. Calculate Pearson Correlation
+merged_df.dropna(subset=['sentiment_avg', 'daily_return'], inplace=True)
 if len(merged_df) > 1:
     corr, p_value = pearsonr(merged_df['sentiment_avg'], merged_df['daily_return'])
     print(f"Pearson Correlation between Sentiment and Daily Return: {corr:.4f}")
